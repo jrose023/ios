@@ -6,11 +6,11 @@
 //  Copyright © 2017 nyu.edu. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SwitchingViewController.h"
 #import "Object_Info.h"
 #import "StockController.h"
 
-@interface ViewController ()
+@interface SwitchingViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *productPic;
 @property (weak, nonatomic) IBOutlet UITextField *productName;
 @property (weak, nonatomic) IBOutlet UITextField *productDesc;
@@ -23,7 +23,7 @@
 
 @end
 
-@implementation ViewController
+@implementation SwitchingViewController
 - (IBAction)increment:(id)sender {
     Object_Info *obj = [self.productArray objectAtIndex:_idx];
         [obj setUnitsLeft:[obj getUnitsLeft]+1];
@@ -94,14 +94,14 @@
 @end
 #import "Object_Info.h"
 @interface SecondViewController ()
-@property Object_Info *newObj;
+//@property Object_Info *newObj;
 
 @end
 
 @implementation SecondViewController
 - (IBAction)name:(id)sender {
-    NSString *text = [sender value];
-    [_newObj setName: text];
+//    NSString *text = [sender value];
+//    [_newObj setName: text];
 }
 - (IBAction)desc:(id)sender {
 }
